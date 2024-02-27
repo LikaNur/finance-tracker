@@ -1,0 +1,124 @@
+.container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  max-width: 1100px;
+  margin: 90px auto;
+  
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr; 
+    margin: 30px auto;
+  }
+}
+
+.content {
+  padding-right: 30px;
+  @media (max-width: 767px) {
+    grid-row-start: 2;
+  }
+}
+
+.sidebar {
+  padding-left: 20px;
+
+  form {
+    padding: 40px;
+    background-color: #FEFEFE;
+    border-radius: 25px;
+
+    input,
+    select {
+      display: block;
+      width: 100%;
+      padding: 25px;
+      margin-top: 20px;
+      box-sizing: border-box;
+      border: 2px solid #F6F6F6;
+      border-radius: 10px;
+      font-size: 0.9em;
+    }
+
+    label {
+      margin: 0 auto 30px;
+      display: block;
+      color: black;
+    }
+
+    button {
+      color: #FFFFFF;
+      border: 2px solid #F6F6F6;
+      padding: 14px 30px;
+      background-color: #FE5D03;
+      font-size: 0.9em;
+      border-radius: 50px;
+      cursor: pointer;
+      display: block;
+      transition: all 0.2s;
+      margin: 0 auto;
+
+      &:hover {
+        color: FFFFFF;
+        background-color: #F38A5C;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    grid-row-start: 1;
+  }
+}
+
+.transactions {
+  .edit-button {
+    color: #f2f2f2;
+    background-color: #FE5D03;
+    border: 2px solid #F6F6F6;
+    border-radius: 20px;
+    font-size: 0.9em;
+    padding: 10px 0;
+  }
+
+  &.dark {
+    .edit-button {
+      background-color: #FE5D03;
+      border: 2px solid #F6F6F6;
+    }
+  }
+
+  .edit-button:hover {
+    color: #FFFFFF;
+  }
+}
+
+.sidebar {
+  button:hover,
+  .transactions.dark .edit-button:hover {
+    color: FFFFFF;
+    background-color: #F38A5C;
+  }
+
+  h3 {
+    color: #000000;
+    margin: 20px;
+    font-size: 1.1em;
+  }
+
+  aside {
+    margin-top: 40px;
+    color: #555;
+
+    li {
+      margin: 10px;
+    }
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .image-container {
+    margin: 0 120px
+  }
+}

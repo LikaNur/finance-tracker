@@ -1,0 +1,187 @@
+.transactions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin: 30px auto;
+    border: 1px solid #f2f2f2;
+    box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-left: 4px solid #f2f2f2;
+    background-color: #fffffff6;
+    border-radius: 10px;
+
+
+    &.dark {
+      background-color: #b8b8b85b;
+      border-radius: 10px;
+    }
+
+    .date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      color: #121212;
+      font-size: 0.8em;
+      text-transform: capitalize;
+      background-color: #f38a5c;
+      padding: 3px 5px;
+      border-radius: 1px;
+    }
+
+    .name,
+    .edit-input {
+      color: #121212;
+      font-size: 1em;
+      text-transform: capitalize;
+      margin-top: 1em;
+      position: relative;
+
+      .dark & {
+        color: #000000;
+      }
+
+      .name {
+        .edit-icon {
+          position: absolute;
+          margin-left: 0.5em;
+          height: 20px;
+          width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .amount {
+      margin-left: auto;
+      margin-right: 40px;
+      color: #121212;
+      font-weight: 600;
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #f38a5c;
+      border: none;
+      padding: 12px 18px;
+      text-align: center;
+      line-height: 0;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-radius: 5px;
+      color: #000000;
+
+      &:hover {
+        background-color: #f38a5c;
+        color: #505050;
+      }
+    }
+
+    .edit-icon {
+      position: absolute;
+      margin-left: 0.5em;
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+    }
+
+    .edit-container,
+    .edit-amount-container {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      gap: 0.5em;
+    }
+
+    .edit-input {
+      width: 100%;
+      border: 2px solid #f6f6f6;
+      font-size: 1em;
+      padding: 5px 10px;
+      border-radius: 15px;
+    }
+
+    .edit-button,
+    .dark .edit-button {
+      position: static;
+      padding: 1em 0 1em 0;
+      width: 50%;
+    }
+
+    .buttons-container {
+      display: flex;
+      gap: 0.5em;
+    }
+
+    .edit-amount-container {
+      width: 100%;
+      margin-left: 40%;
+      margin-right: 1.5em;
+    }
+  }
+}
+
+ 
+@media (max-width: 768px) {
+  .transactions {
+    margin: 0 -5px 0 20px;
+  }
+  .date {
+    font-size: 0.6em;
+    padding: 2px 3px;
+  }
+
+  .name,
+  .amount {
+    font-size: 1em;
+    margin-top: 0.3em;
+  }
+    
+  button {
+    padding: 10px ;
+    font-size: 0.5em;
+  }
+  
+  .edit-icon {
+    height: 10px;
+    width: 10px;
+  }
+
+  .edit-container,
+  .edit-amount-container {
+    gap: 0.3em;
+  }
+
+  .edit-button,
+  .dark .edit-button {
+    padding: 1em;
+  }
+
+  input {
+    font-size: 1em; /* Set font size to 1em */
+    padding: 10px;  
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .edit-amount-container {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

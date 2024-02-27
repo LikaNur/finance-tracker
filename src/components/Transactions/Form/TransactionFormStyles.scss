@@ -1,0 +1,140 @@
+.signup-form {
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  form {
+    label {
+      display: block;
+      margin: 10px 0;
+
+      span {
+        display: block;
+        margin-bottom: 6px;
+        color: black;
+      }
+
+      input {
+        padding: 13px 16px;
+        font-size: 1em;
+        width: 100%;
+        border: 2px solid #E2E2E2;
+        margin: 0 auto;
+        border-radius: 30px;
+      }
+    }
+
+    button {
+      color: #ffffff;
+      border: 2px solid #F6F6F6;
+      padding: 14px 30px;
+      background-color: #FE5D03;
+      font-size: 0.9em;
+      border-radius: 50px;
+      cursor: pointer;
+      display: block;
+      transition: all 0.2s;
+      margin: 10px auto 0;
+
+      &:hover {
+        color: #FFFFFF;
+        background-color: #F38A5C;
+      }
+    }
+  }
+}
+
+.sidebar {
+  padding-left: 20px;
+
+  form {
+    padding: 40px;
+    background-color: #FEFEFE;
+    border-radius: 25px;
+
+    input,
+    select {
+      display: block;
+      width: 0%;
+      padding: 25px;
+      margin-top: 20px;
+      box-sizing: border-box;
+      border: 2px solid #F6F6F6;
+      border-radius: 10px;
+      font-size: 0.9em;
+    }
+
+    label {
+      margin: 0 auto 30px;
+      display: block;
+      color: black;
+    }
+
+    button {
+      color: #FFFFFF;
+      border: 2px solid #F6F6F6;
+      padding: 14px 30px;
+      background-color: #FE5D03;
+      font-size: 0.9em;
+      border-radius: 50px;
+      cursor: pointer;
+      display: block;
+      transition: all 0.2s;
+      margin: 0 auto;
+
+      &:hover {
+        color: FFFFFF;
+        background-color: #F38A5C;
+      }
+    }
+
+    h3 {
+      color: #000000;
+      margin: 20px;
+      font-size: 1.1em;
+    }
+
+    aside {
+      margin-top: 40px;
+      color: #555;
+
+      li {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.1em;
+  }
+
+  form {
+    padding: 10px;
+    margin: 0 20px 0 0;
+
+    input,
+    select {
+      display: block;
+      width: 50%;
+      padding: 15px;
+      margin-top: 10px;
+      box-sizing: border-box;
+      border: 2px solid #F6F6F6;
+      border-radius: 10px;
+      font-size: 0.6em;
+    }
+
+    aside {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 0.8em;
+    }
+  }
+}
